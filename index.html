@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Include Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Include Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col h-screen">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white py-4 shadow-md flex items-center justify-between px-4">
+    <!-- School Name -->
+    <h1 class="text-xl font-bold flex items-center h-10">
+        <img src="1.png" class="h-10 w-10" alt=""> Kaya Tiwi
+    </h1>
+    
+    <!-- Profile Actions -->
+    <div class="flex items-center space-x-4">
+      <!-- Notifications Icon -->
+      <button class="relative"  >
+        <i class="fas fa-bell text-xl"></i>
+        <span class="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">3</span>
+      </button>
+  
+      <!-- Profile Icon -->
+      <button>
+        <i class="fas fa-user-circle text-2xl"></i>
+      </button>
+    </div>
+  </header>
+  
+
+  <!-- Main Content -->
+  <main class="flex-1 overflow-auto p-4">
+    <!--home-->
+    <section id="home" class="hidden">
+        <h2 class="text-lg font-bold mb-4 text-blue-600 flex items-center">
+          <i class="fas fa-home mr-2"></i>Home
+        </h2>
+        
+        <!-- Welcome Banner -->
+        <div
+  class="bg-blue-500 text-white p-6 rounded-lg shadow-lg mb-6 bg-cover bg-center"
+  style="background-image: url('2.jpg');"
+>
+  <div class="bg-blue-900 bg-opacity-50 p-4 rounded-lg">
+    <h3 class="text-xl font-bold text-center">Welcome to Kaya Tiwi High School!</h3>
+    <p class="text-sm mt-2 text-center">
+      Access learning materials, assignments, and stay connected with your school community.
+    </p>
+  </div>
+</div>
+
+        
+        <!-- Features Grid (Horizontal Scrollable) -->
+        <div class="flex space-x-4 overflow-x-auto pb-2">
+          <!-- Single Card -->
+          <div class="flex-none bg-yellow-400 text-white rounded-lg shadow-md w-56 p-4">
+            <h4 class="text-lg font-bold mb-2">Class Notes</h4>
+            <p class="text-sm">Access all your class notes and study materials in one place.</p>
+          </div>
+      
+          <div class="flex-none bg-green-500 text-white rounded-lg shadow-md w-56 p-4">
+            <h4 class="text-lg font-bold mb-2">Holiday Assignments</h4>
+            <p class="text-sm">Download and submit holiday assignments easily.</p>
+          </div>
+      
+          <div class="flex-none bg-red-400 text-white rounded-lg shadow-md w-56 p-4">
+            <h4 class="text-lg font-bold mb-2">School Events</h4>
+            <p class="text-sm">Stay updated with upcoming school events and activities.</p>
+          </div>
+      
+          <div class="flex-none bg-purple-500 text-white rounded-lg shadow-md w-56 p-4">
+            <h4 class="text-lg font-bold mb-2">Exam Schedule</h4>
+            <p class="text-sm">Keep track of exam dates and prepare accordingly.</p>
+          </div>
+        </div>
+      
+        <!-- Quick Links -->
+        <div class="mt-6">
+          <h3 class="text-blue-600 text-lg font-bold mb-4">Quick Links</h3>
+          <div class="grid grid-cols-2 gap-4">
+            <a href="#" class="flex items-center bg-gray-200 p-3 rounded-lg shadow-md hover:bg-gray-300">
+                <i class="fas fa-user-graduate text-blue-500 text-xl mr-2"></i>
+                <span class="text-sm font-medium">Student Portal</span>
+              </a>
+              <a href="#" class="flex items-center bg-gray-200 p-3 rounded-lg shadow-md hover:bg-gray-300">
+                <i class="fas fa-chalkboard-teacher text-blue-500 text-xl mr-2"></i>
+                <span class="text-sm font-medium">Teacher Contacts</span>
+              </a>
+              <a href="#" class="flex items-center bg-gray-200 p-3 rounded-lg shadow-md hover:bg-gray-300">
+                <i class="fas fa-calendar-alt text-blue-500 text-xl mr-2"></i>
+                <span class="text-sm font-medium">School Calendar</span>
+              </a>
+              <a href="#" class="flex items-center bg-gray-200 p-3 rounded-lg shadow-md hover:bg-gray-300">
+                <i class="fas fa-envelope text-blue-500 text-xl mr-2"></i>
+                <span class="text-sm font-medium">Contact Admin</span>
+              </a>
+              <a href="#" class="flex items-center bg-gray-200 p-3 rounded-lg shadow-md hover:bg-gray-300">
+                <i class="fas fa-futbol text-blue-500 text-xl mr-2"></i>
+                <span class="text-sm font-medium">Games/Sports</span>
+              </a>
+              <a href="#" class="flex items-center bg-gray-200 p-3 rounded-lg shadow-md hover:bg-gray-300">
+                <i class="fas fa-chart-line text-blue-500 text-xl mr-2"></i>
+                <span class="text-sm font-medium">KCSE Results</span>
+              </a>
+              <a href="#" class="flex items-center bg-gray-200 p-3 rounded-lg shadow-md hover:bg-gray-300">
+                <i class="fas fa-images text-blue-500 text-xl mr-2"></i>
+                <span class="text-sm font-medium">Gallery</span>
+              </a>
+              <a href="#" class="flex items-center bg-gray-200 p-3 rounded-lg shadow-md hover:bg-gray-300">
+                <i class="fas fa-users text-blue-500 text-xl mr-2"></i>
+                <span class="text-sm font-medium">Alumni</span>
+              </a>
+              
+          </div>
+        </div>
+      </section>
+      
+
+    <!--Notes-->
+    <section id="notes" class="hidden">
+        <h2 class="text-lg font-bold mb-4 text-green-600 flex items-center">
+          <i class="fas fa-book mr-2"></i>Notes
+        </h2>
+        
+        <!-- Intro Banner -->
+        <div class="bg-green-500 text-white p-4 rounded-lg shadow-lg mb-6">
+          <h3 class="text-xl font-semibold text-center">Class Notes and Study Materials</h3>
+          <p class="text-sm mt-2 texce">
+            Find and organize your study materials by subjects and topics. Swipe through categories below.
+          </p>
+        </div>
+      
+        <!-- Horizontal Scrollable Categories -->
+        <div class="flex space-x-4 overflow-x-auto pb-2">
+          <!-- Individual Subject Card -->
+          <div class="flex-none bg-blue-400 text-white rounded-lg shadow-md w-64 p-4">
+            <h4 class="text-lg font-semibold">Mathematics</h4>
+            <p class="text-sm mt-2">Algebra, Geometry, Trigonometry, and more.</p>
+          </div>
+      
+          <div class="flex-none bg-purple-500 text-white rounded-lg shadow-md w-64 p-4">
+            <h4 class="text-lg font-semibold">Science</h4>
+            <p class="text-sm mt-2">Physics, Chemistry, and Biology notes.</p>
+          </div>
+      
+          <div class="flex-none bg-yellow-400 text-white rounded-lg shadow-md w-64 p-4">
+            <h4 class="text-lg font-semibold">English</h4>
+            <p class="text-sm mt-2">Essays, Literature, and Grammar resources.</p>
+          </div>
+      
+          <div class="flex-none bg-red-400 text-white rounded-lg shadow-md w-64 p-4">
+            <h4 class="text-lg font-semibold">History</h4>
+            <p class="text-sm mt-2">World and regional history topics.</p>
+          </div>
+      
+          <div class="flex-none bg-teal-500 text-white rounded-lg shadow-md w-64 p-4">
+            <h4 class="text-lg font-semibold">Geography</h4>
+            <p class="text-sm mt-2">Maps, Physical, and Human Geography.</p>
+          </div>
+        </div>
+      
+        <!-- Recent Notes -->
+        <div class="mt-6 mb-12">
+          <h3 class="text-green-600 text-lg font-bold mb-4">Recent Notes</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+              <h4 class="text-md font-semibold mb-2">Trigonometry Basics</h4>
+              <p class="text-sm text-gray-600">Mathematics - Grade 10</p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+              <h4 class="text-md font-semibold mb-2">Chemical Reactions</h4>
+              <p class="text-sm text-gray-600">Science - Grade 9</p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+              <h4 class="text-md font-semibold mb-2">Literary Devices</h4>
+              <p class="text-sm text-gray-600">English - Grade 11</p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+              <h4 class="text-md font-semibold mb-2">World War II Overview</h4>
+              <p class="text-sm text-gray-600">History - Grade 12</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!--assignments-->
+      <section id="assignments" class="hidden">
+        <h2 class="text-lg font-bold mb-4 text-red-600 flex items-center">
+          <i class="fas fa-tasks mr-2"></i>Assignments
+        </h2>
+        
+        <!-- Introductory Banner -->
+        <div class="bg-red-500 text-white p-4 rounded-lg shadow-lg mb-6">
+          <h3 class="text-xl font-semibold">Your Assignments</h3>
+          <p class="text-sm mt-2">
+            Stay on top of your studies by accessing and submitting assignments here. Scroll through subjects to find tasks.
+          </p>
+        </div>
+      
+        <!-- Horizontal Scrollable Categories -->
+        <div class="flex space-x-4 overflow-x-auto pb-2">
+          <!-- Individual Subject Card -->
+          <div class="flex-none bg-blue-400 text-white rounded-lg shadow-md w-64 p-4">
+            <h4 class="text-lg font-semibold">Mathematics</h4>
+            <p class="text-sm mt-2">Algebra, Geometry, and Trigonometry tasks.</p>
+          </div>
+      
+          <div class="flex-none bg-green-500 text-white rounded-lg shadow-md w-64 p-4">
+            <h4 class="text-lg font-semibold">Science</h4>
+            <p class="text-sm mt-2">Physics, Chemistry, and Biology assignments.</p>
+          </div>
+      
+          <div class="flex-none bg-yellow-400 text-white rounded-lg shadow-md w-64 p-4">
+            <h4 class="text-lg font-semibold">English</h4>
+            <p class="text-sm mt-2">Essay writing and grammar exercises.</p>
+          </div>
+      
+          <div class="flex-none bg-purple-500 text-white rounded-lg shadow-md w-64 p-4">
+            <h4 class="text-lg font-semibold">History</h4>
+            <p class="text-sm mt-2">Research and analysis tasks.</p>
+          </div>
+      
+          <div class="flex-none bg-teal-500 text-white rounded-lg shadow-md w-64 p-4">
+            <h4 class="text-lg font-semibold">Geography</h4>
+            <p class="text-sm mt-2">Map studies and geographical analysis.</p>
+          </div>
+        </div>
+      
+        <!-- Recent Assignments -->
+        <div class="mt-6 mb-12">
+          <h3 class="text-red-600 text-lg font-bold mb-4">Recent Assignments</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+              <h4 class="text-md font-semibold mb-2">Trigonometry Worksheet</h4>
+              <p class="text-sm text-gray-600">Due: 20th Nov | Mathematics</p>
+              <button class="mt-2 text-sm bg-blue-500 text-white px-4 py-1 rounded-lg hover:bg-blue-600">Download</button>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+              <h4 class="text-md font-semibold mb-2">Chemical Bonding Exercises</h4>
+              <p class="text-sm text-gray-600">Due: 22nd Nov | Science</p>
+              <button class="mt-2 text-sm bg-blue-500 text-white px-4 py-1 rounded-lg hover:bg-blue-600">Download</button>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+              <h4 class="text-md font-semibold mb-2">Literature Analysis</h4>
+              <p class="text-sm text-gray-600">Due: 25th Nov | English</p>
+              <button class="mt-2 text-sm bg-blue-500 text-white px-4 py-1 rounded-lg hover:bg-blue-600">Download</button>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+              <h4 class="text-md font-semibold mb-2">World War II Project</h4>
+              <p class="text-sm text-gray-600">Due: 30th Nov | History</p>
+              <button class="mt-2 text-sm bg-blue-500 text-white px-4 py-1 rounded-lg hover:bg-blue-600">Download</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <!--profile-->
+    <section id="profile" class="hidden">
+        <h2 class="text-lg font-bold mb-4 text-indigo-600 flex items-center">
+          <i class="fas fa-user mr-2"></i>Profile
+        </h2>
+      
+        <!-- Profile Banner -->
+        <div class="bg-indigo-500 text-white p-4 rounded-lg shadow-lg mb-6 flex items-center">
+          <img src="https://via.placeholder.com/80" alt="Profile Picture" class="rounded-full w-20 h-20 mr-4 border-2 border-white">
+          <div>
+            <h3 class="text-xl font-semibold">John Doe</h3>
+            <p class="text-sm mt-1">Grade 10 | High School XYZ</p>
+          </div>
+        </div>
+      
+        <!-- Horizontal Scrollable Quick Actions -->
+        <div class="flex space-x-4 overflow-x-auto pb-2">
+          <div class="flex-none bg-green-500 text-white rounded-lg shadow-md w-64 p-4">
+            <h4 class="text-lg font-semibold">Achievements</h4>
+            <p class="text-sm mt-2">View your academic and extracurricular awards.</p>
+          </div>
+          <div class="flex-none bg-blue-400 text-white rounded-lg shadow-md w-64 p-4">
+            <h4 class="text-lg font-semibold">Update Info</h4>
+            <p class="text-sm mt-2">Edit your personal details or change your profile picture.</p>
+          </div>
+          <div class="flex-none bg-purple-500 text-white rounded-lg shadow-md w-64 p-4">
+            <h4 class="text-lg font-semibold">Settings</h4>
+            <p class="text-sm mt-2">Manage your account preferences and notifications.</p>
+          </div>
+        </div>
+      
+        <!-- Editable Profile Details -->
+        <div class="mt-6 mb-14">
+          <h3 class="text-indigo-600 text-lg font-bold mb-4">Profile Details</h3>
+          <form class="bg-gray-100 p-4 rounded-lg shadow-md space-y-4">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-600">Name</label>
+              <input id="name" type="text" value="John Doe" class="w-full border-gray-300 rounded-lg p-2 mt-1 focus:border-indigo-500 focus:ring-indigo-500">
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-600">Email</label>
+              <input id="email" type="email" value="john.doe@example.com" class="w-full border-gray-300 rounded-lg p-2 mt-1 focus:border-indigo-500 focus:ring-indigo-500">
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-600">Phone</label>
+              <input id="phone" type="tel" value="+1234567890" class="w-full border-gray-300 rounded-lg p-2 mt-1 focus:border-indigo-500 focus:ring-indigo-500">
+            </div>
+            <div>
+              <label for="grade" class="block text-sm font-medium text-gray-600">Grade</label>
+              <input id="grade" type="text" value="10" class="w-full border-gray-300 rounded-lg p-2 mt-1 focus:border-indigo-500 focus:ring-indigo-500">
+            </div>
+            <button type="submit" class="w-full bg-indigo-500 text-white py-2 rounded-lg hover:bg-indigo-600">Save Changes</button>
+          </form>
+        </div>
+      </section>
+      
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-300 shadow-md flex justify-between text-gray-500">
+    <button class="flex-1 flex flex-col items-center py-2 hover:text-blue-600" onclick="showPage('home')">
+      <i class="fas fa-home text-xl"></i>
+      <span class="text-xs">Home</span>
+    </button>
+    <button class="flex-1 flex flex-col items-center py-2 hover:text-blue-600" onclick="showPage('notes')">
+      <i class="fas fa-book text-xl"></i>
+      <span class="text-xs">Notes</span>
+    </button>
+    <button class="flex-1 flex flex-col items-center py-2 hover:text-blue-600" onclick="showPage('assignments')">
+      <i class="fas fa-tasks text-xl"></i>
+      <span class="text-xs">Assignments</span>
+    </button>
+    <button class="flex-1 flex flex-col items-center py-2 hover:text-blue-600" onclick="showPage('profile')">
+      <i class="fas fa-user text-xl"></i>
+      <span class="text-xs">Profile</span>
+    </button>
+  </nav>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
